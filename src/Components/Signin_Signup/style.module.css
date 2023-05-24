@@ -1,0 +1,28 @@
+.welcome_box{
+    border-radius: 0 0 100% 100%; 
+    background: #011029;
+  width: 250px;
+  height: 65px;
+  color: white;
+  font-family: cursive;
+}
+
+@keyframes textAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  .textAnimation {
+    animation: textAnimation 3s infinite;
+  }
+  
