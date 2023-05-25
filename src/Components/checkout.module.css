@@ -1,0 +1,12 @@
+.creditCard{
+    width:50px;
+    color:yellow;
+
+    background-color: yellow;
+}
+
+.carddiv{
+    border-color: black;
+    background-color: red;
+    height: 60px;
+}
