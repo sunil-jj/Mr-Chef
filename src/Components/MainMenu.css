@@ -1,0 +1,29 @@
+.body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px;
+}
+
+.body img {
+    width: 80%;
+    height: 220px;
+    border-radius: 5px;
+}
+
+.body div {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 70%;
+    left : 40%;
+    transform : translate(-70%, -40%);     
+}
