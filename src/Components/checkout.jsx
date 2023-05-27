@@ -2,34 +2,96 @@ import React from 'react'
 import { Input,Box,Center,Text,Checkbox,Flex,Spacer,Stack,Textarea, Button,Image} from '@chakra-ui/react'
 import styles from "./checkout.module.css";
 import { useState } from 'react';
-import Otp from './otp';
+import {
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+} from '@chakra-ui/react'
+import Loading from './loading';
+
+
+import OTPInput from "otp-input-react"
 
 function Checkout() {
   const [creditCard,setcreditcard]=useState({state:"none",
  cardNo:"",
 cvv:"",
 date:""});
+const[otp,setotp]=useState("");
+const [checkoutpage,setcheckpage]=useState("block")
+const [otppage,setotppage]=useState("none")
+// const [xyz,setxyz]=useState("");
+const [genotp,setgenotp]=useState(0);
+const [isload,setisLoad]=useState(false);
+const [paybtn,setpaybtn]=useState(true)
+  let checkotp=()=>{
+    if(genotp==otp){
+            setcheckpage("none");
+            setotppage("none");
+            setisLoad(true)
+            
+            
 
 
+            let timeout;
+
+            function myFunction() {
+              timeout = setTimeout(alertFunc, 3000);
+            }
+            
+            function alertFunc() {
+              setisLoad(false)
+            }
+            myFunction();
+
+
+
+
+
+
+
+
+           
+    }  else{
+      alert('Invalid OTP')
+      setotp("")
+      } }
+  
   let handleClick=()=>{
     if(creditCard.cardNo==""||creditCard.date==""||creditCard.cvv==""){
-      alert('fill details')
- 
+      
+      
+    
     }else{
-     return(
-      <Box>
-        <Button>hiohlb</Button>
-      </Box>
-     )       
+    let num=Math.floor(Math.random()*10000)
+    setpaybtn(false)
+  setgenotp(num)
+  alert("OTP Is "+ num)
+  console.log(num)
+
+    console.log(otp)
+  setcheckpage("none")
+  setotppage ("block")
   
     }
   }
+let handlecrbtn=()=>{
+  setpaybtn(false)
+  {creditCard.state=="none"? setcreditcard({...creditCard,state:"block"}):setcreditcard({...creditCard,state:"none"})}
 
- 
+}
+  
+
+ let handlecashbtn=()=>{
+  setcreditcard({...creditCard,state:"none"})
+  setpaybtn(false)
+  
+ }
  
   return (
-    
-      <Box>
+       <Box >
+      <Box display={checkoutpage}>
       <Center>
       <Stack>
       <Box w="500px" height="600px" align="left" padding="15px" borderWidth='2px'backgroundColor="white" borderRadius='lg' overflow='hidden'>
@@ -57,7 +119,7 @@ date:""});
        </Box>
        <Text fontSize="18px">TERMS OF PAYMENT</Text>
        
-       <Button height = "60px" colorScheme='red'  variant='ghost'>
+       <Button height = "60px" colorScheme='red'  variant='ghost'onClick={handlecrbtn}>
        <Center>
        <Stack>
         <img width="50px" className={styles.creditCard}  src="https://cutewallpaper.org/24/credit-card-icon-png/card-clipart-payment-card-credit-card-icon-png-white-transparent-png-226663-pinclipart.png" ></img>
@@ -68,7 +130,7 @@ date:""});
        
         
        
-        <Button height = "60px"colorScheme='red' variant='ghost' onClick={()=>{creditCard=="none"? setcreditcard("block"):setcreditcard("none")}}>
+        <Button height = "60px"colorScheme='red' variant='ghost' onClick={handlecashbtn} >
         <Center>
           <Stack>
            
@@ -85,7 +147,7 @@ date:""});
        </Box>
        </Box>
 
-       <Box display={creditCard} width="500px" >
+       <Box display={creditCard.state} width="500px" >
         
           <Stack>
             
@@ -119,15 +181,31 @@ date:""});
         
       </Box>
 
-      <Button colorScheme='teal' varient="outline" onClick={handleClick}>Make Payment</Button>
+      <Button colorScheme='teal'isDisabled={paybtn} varient="outline" onClick={handleClick}>Make Payment</Button>
       </Stack>
       </Center>  
 
-      
+      <Box>
+
+      </Box>
           
        
    
 
+      </Box>
+      <Box display={otppage}>
+      <Center>
+        <Box bg='blue.100' width="400px" height="400px" padding= "50px" margin="100px">
+        <Center >
+    <OTPInput margin="50px" value={otp} onChange={setotp} autoFocus OTPLength={4} otpType="number" disabled={false}  />
+    <Button onClick={checkotp}>Verify OTP</Button>
+    
+    </Center>
+    
+    </Box>
+    </Center>
+      </Box>
+      {isload? <Loading/>:""}
       </Box>
   )
 }
