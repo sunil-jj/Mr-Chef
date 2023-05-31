@@ -5,14 +5,14 @@ function About() {
   return (
 
     <Box >
-      <h2 style={{fontFamily:"cursive",fontWeight:"bold",fontSize:"35px"}} > About Us</h2>
+      <h2 style={{fontFamily:"cursive",fontWeight:"bold",fontSize:"35px",marginLeft:"45%"}} > About Us</h2>
       <Center>
       <Image w="50%"  src=" https://media.istockphoto.com/id/1394055240/photo/happy-black-female-chef-preparing-food-in-frying-pan-at-restaurant-kitchen.jpg?b=1&s=612x612&w=0&k=20&c=orfnpNSuRtQ88QcXjT2_YORJ0DsrLL7uBoE9Pt3njKM="/>
       
       </Center>
         <Center>   
       <Box borderBottomLeftRadius="150px"  w="50%" bg="darkcyan"  color="white">
-          <Container  marginLeft="50px" justifyContent="center" maxW="550px">              
+          <Container  marginLeft="20%" justifyContent="center" maxW="550px">              
             
                "Mr.Chef is a street food with Odessa hospitality.
 We have been making our guests happy since 2015.
