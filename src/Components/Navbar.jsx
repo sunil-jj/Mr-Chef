@@ -8,10 +8,10 @@ import { Box, Flex, Spacer,Link, ChakraProvider,extendTheme,Image } from '@chakr
 
 const Navbar = () => {
   return (
-    <div  className='Mainbar' >
-      <div  style={{display:"flex",width:"100%",marginTop:"10px"}}  className='Image'>
+    <div style={{width:"100%",height:"45px"}} className='Mainbar' >
+      <div   className='Image'>
       <figure>
-  <img style={{width:"80px"}} src=" https://thumbs.dreamstime.com/b/cartoon-logo-of-a-happy-chef-preparing-meal-with-bowl-and-whisk-222980548.jpg " alt="Description of the image"/>
+  <img style={{width:"100px",marginTop:"2px",marginLeft:"18px"}} src=" https://thumbs.dreamstime.com/b/cartoon-logo-of-a-happy-chef-preparing-meal-with-bowl-and-whisk-222980548.jpg " alt="Description of the image"/>
   
 </figure>
 </div>

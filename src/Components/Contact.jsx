@@ -51,7 +51,7 @@ function Contact() {
       </div>
 
       <div style={{border:"2px solid black",width:"100%",height:"150px",backgroundColor:"black",display:"flex"}} className='footer'>
-       <div style={{color:"white"}}>
+       <div style={{color:"white",marginLeft:"10px"}}>
          <h4> New</h4>
          <h4> Shawarma</h4>
 
