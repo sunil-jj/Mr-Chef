@@ -6,7 +6,7 @@
       "name": "Cheese Pizza",
       "category": "Pizza",
       "price": 149,
-      "desc": "Basil, Cheese, Tomatoes",
+      "desc": "Basil · Cheese · Tomatoes",
       "weight": "150gms"
     },
     {
@@ -15,7 +15,7 @@
       "name": "Veggie Pizza",
       "category": "Pizza",
       "price": 149,
-      "desc": "roasted red peppers, baby spinach, onions, mushrooms, tomatoes, black olives and cheese",
+      "desc": "roasted red peppers · baby spinach · onions · mushrooms · tomatoes · black olives · cheese",
       "weight": "200gms"
     },
     {
@@ -24,7 +24,7 @@
       "name": "Pepperoni Pizza",
       "category": "Pizza",
       "price": 199,
-      "desc": " pizza sauce, mozzarella cheese, and pepperoni",
+      "desc": " pizza sauce · mozzarella cheese · pepperoni",
       "weight": "180gms"
     },
     {
@@ -33,7 +33,7 @@
       "name": "Margherita Pizza",
       "category": "Pizza",
       "price": 179,
-      "desc": " red tomatoes, white mozzarella and green basil",
+      "desc": " red tomatoes · white mozzarella · green basil",
       "weight": "180gms"
     },
     {
@@ -42,7 +42,7 @@
       "name": "Hawaiian Pizza",
       "category": "Pizza",
       "price": 249,
-      "desc": "Rich tomato-based pizza sauce, Gooey mozzarella, Crispy savoury ham, Bursts of tangy pineapple",
+      "desc": "Rich tomato-based pizza sauce · Gooey mozzarella · Crispy savoury ham · Bursts of tangy pineapple",
       "weight": "200gms"
     },
     {
@@ -51,7 +51,7 @@
       "name": "Supreme Pizza",
       "category": "Pizza",
       "price": 249,
-      "desc": "pepperoni, seasoned pork, beef, mushrooms, green bell peppers and onions",
+      "desc": "pepperoni · seasoned pork · beef · mushrooms · green bell peppers · onions",
       "weight": "250gms"
     },
     {
@@ -60,7 +60,7 @@
       "name": "Neapolitan Pizza",
       "category": "Pizza",
       "price": 299,
-      "desc": "raw tomatoes, mozzarella cheese, basil, and olive oil",
+      "desc": "raw tomatoes · mozzarella cheese · basil · olive oil",
       "weight": "150gms"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Sicilian Pizza",
       "category": "Pizza",
       "price": 349,
-      "desc": "mozzarella cheese, pizza sauce, Italian sausage, pepperoni, bacon, green pepper, onion, grated parmesan cheese, and dried Italian seasoning",
+      "desc": "Italian sausage · pepperoni · bacon · green pepper · onion · cheese · dried Italian seasoning",
       "weight": "300gms"
     },
     {
@@ -78,7 +78,7 @@
       "name": "Greek Pizza",
       "category": "Pizza",
       "price": 299,
-      "desc": " feta, spinach, spices, garlic and olives",
+      "desc": " feta · spinach · spices · garlic · olives",
       "weight": "250gms"
     },
     {
@@ -87,7 +87,7 @@
       "name": "California Pizza",
       "category": "Pizza",
       "price": 249,
-      "desc": "chicken, peanut sauce, artichoke hearts, and goat cheese",
+      "desc": "chicken · peanut sauce · artichoke hearts · goat cheese",
       "weight": "200gms"
     },
     {
@@ -96,16 +96,16 @@
       "name": "Carbonara Pizza",
       "category": "Pizza",
       "price": 299,
-      "desc": " guanciale (cured pork), eggs, Pecorino Romano cheese, spaghetti pasta, and lots of black pepper",
+      "desc": "guanciale (cured pork) · eggs · Pecorino Romano cheese · spaghetti pasta · lots of black pepper",
       "weight": "200gms"
     },
     {
       "id": 12,
       "image": "https://www.butter-n-thyme.com/wp-content/uploads/2023/03/New-Haven-Style-Pizza.jpg",
-      "name": "Connecticut White Clam Pizza",
+      "name": "White Clam Pizza",
       "category": "Pizza",
       "price": 349,
-      "desc": "olive oil, garlic, cheese, vegetables such as spinach, tomato, and herbs",
+      "desc": "olive oil · garlic · cheese · vegetables such as spinach · tomato · herbs",
       "weight": "250gms"
     },
     {
@@ -114,7 +114,7 @@
       "name": "Pugliese Pizza",
       "category": "Pizza",
       "price": 299,
-      "desc": "Tomato, onion, mozzarella, Oregano, olives and capers",
+      "desc": "Tomato · onion · mozzarella · Oregano · olives · capers",
       "weight": "250gms"
     },
     {
@@ -123,7 +123,7 @@
       "name": "Roman Style Pizza",
       "category": "Pizza",
       "price": 249,
-      "desc": "pepperoni, sausage, prosciutto, arugula, shaved zucchini, artichokes, olives, and cherry tomatoes",
+      "desc": "pepperoni · sausage · prosciutto · arugula · shaved zucchini · artichokes · olives · cherry tomatoes",
       "weight": "350gms"
     },
     {
@@ -132,7 +132,7 @@
       "name": "St. Louis Style Pizza",
       "category": "Pizza",
       "price": 349,
-      "desc": "Extra-Cheese, Onion, Green Pepper, Sausage, Hamburger, Pepperoni, Anchovy, Bacon, Black Olive, Mushroom, Canadian Bacon",
+      "desc": "Cheese · Onion · Green Pepper · Sausage · Pepperoni · Anchovy · Bacon · Black Olive · Mushroom",
       "weight": "350gms"
     }
   ],
@@ -152,7 +152,7 @@
       "name": "Mexican Cottage Cheese Sandwich",
       "category": "Street Food",
       "price": 299,
-      "desc": "Cottage Cheese, Bell Peppers, green chutney, butter",
+      "desc": "Cottage Cheese · Bell Peppers · green chutney · butter",
       "weight": "150gm"
     },
     {
@@ -161,7 +161,7 @@
       "name": "Cheese French Fries",
       "category": "Street Food",
       "price": 99,
-      "desc": "Cheese, potato, Tomato Sauce",
+      "desc": "Cheese · potato · Tomato Sauce",
       "weight": "250gms"
     },
     {
@@ -170,7 +170,7 @@
       "name": "Crunchy Chicken Strips",
       "category": "Street Food",
       "price": 399,
-      "desc": "Fried Chicken stripes dipped in flour and bread crumbs, coated wit egg mix, fried or baked ",
+      "desc": "Fried Chicken stripes dipped in flour and bread crumbs · coated wit egg mix · fried or baked ",
       "weight": "350gms"
     },
     {
@@ -179,7 +179,7 @@
       "name": "Cheese Chicken Wrap",
       "category": "Street Food",
       "price": 189,
-      "desc": "Chicken , picante sauce, sour cream, cheese wrapped inside tortillas with salsa for dip",
+      "desc": "Chicken · picante sauce · sour cream · cheese · wrapped inside tortillas with salsa for dip",
       "weight": "250gms"
     },
     {
@@ -188,7 +188,7 @@
       "name": "Chat Papdi",
       "category": "Street Food",
       "price": 141,
-      "desc": "Includes chickpeas, potatoes, chutneys, papdi, curd, sev, yogurt, coriander leaves",
+      "desc": "Includes chickpeas · potatoes · chutneys · papdi · curd · sev · yogurt · coriander leaves",
       "weight": "200gms"
     },
     {
@@ -197,7 +197,7 @@
       "name": "Samosa",
       "category": "Street Food",
       "price": 41,
-      "desc": "peas, potatoes, masala and chilli filled triangle of flour deep fried or baked",
+      "desc": "peas · potatoes · masala · chilli · flatbread cone deep fried or baked",
       "weight": "100gms"
     },
     {
@@ -206,7 +206,7 @@
       "name": "Idli Sambhar",
       "category": "Street Food",
       "price": 181,
-      "desc": "Soft idlis made of Toor dal and curd , vegetable lentil stew with chutney",
+      "desc": "Soft idlis made of Toor dal and curd · vegetable lentil stew with chutney",
       "weight": "250gms"
     },
     {
@@ -215,7 +215,7 @@
       "name": "Bengal's Jhal Muri",
       "category": "Street Food",
       "price": 85,
-      "desc": "Puffed rice, spices, potatoes, vegetables, coriander leaves, chanachur, mustard oil",
+      "desc": "Puffed rice · spices · potatoes · vegetables · coriander leaves · chanachur · mustard oil",
       "weight": "150gms"
     },
     {
@@ -224,7 +224,7 @@
       "name": "Mumbai Vada Pav",
       "category": "Street Food",
       "price": 102,
-      "desc": "Fuffy buns stuffed with a fried batter coated potato dumpling fritter, laced with spicy sweet chutney ",
+      "desc": "Fuffy buns stuffed with a fried batter coated potato dumpling fritter · laced with spicy sweet chutney ",
       "weight": "300gms"
     },
     {
@@ -233,7 +233,7 @@
       "name": "Chole Matar Kulcha",
       "category": "Street Food",
       "price": 209,
-      "desc": "Classic vegetarian dish of dried white peas, garam masala, cumin powder and other spices, with white flatbread (Kulcha)",
+      "desc": "Classic vegetarian dish of dried white peas · garam masala · cumin powder · other spices · white flatbread (Kulcha)",
       "weight": "250gms"
     },
     {
@@ -242,7 +242,7 @@
       "name": "Patna's Litti Choka",
       "category": "Street Food",
       "price": 102,
-      "desc": "Litti made of wheat flour filled with ginger, coriander, green chilli and pickle masala, Chokha of eggplant, tomato, cilli, coriander leaves",
+      "desc": "Litti made of wheat flour filled with ginger · coriander · green chilli and pickle masala · eggplant · tomato · coriander leaves",
       "weight": "500gms"
     },
     {
@@ -251,7 +251,7 @@
       "name": "Chilli Lemon Bhutta",
       "category": "Street Food",
       "price": 208,
-      "desc": "Roasted Bhutta, himalayan salt, lemon, chilli powder",
+      "desc": "Roasted Bhutta · himalayan salt · lemon · chilli powder",
       "weight": "300gms"
     },
     {
@@ -260,7 +260,7 @@
       "name": "Poha Jalebi",
       "category": "Street Food",
       "price": 140,
-      "desc": "Poa with onion, peanuts, green chilli, coriander, mustard seeds, curry leaves, Chilli powder, potato, Jalebis made of flour and cornstarch",
+      "desc": "Poa with onion · peanuts · green chilli · coriander · mustard seeds · curry leaves · Chilli powder · potato · Jalebis made of flour and cornstarch",
       "weight": "250gms"
     },
     {
@@ -269,9 +269,65 @@
       "name": "Chole bhature",
       "category": "Street Food",
       "price": 150,
-      "desc": "Chickpeas with bay leaf, cinnamon, cumin seeds, cloves, Bhature made of whole wheat flour (atta) and curd (dahi)",
+      "desc": "Chickpeas with bay leaf · cinnamon · cumin seeds · cloves · Bhature made of whole wheat flour and curd",
       "weight": "400gms"
     }
   ],
-  "cart": []
+  "cart": [
+    [
+      {
+        "id": 9,
+        "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2016/8/onions.jpg",
+        "name": "Greek Pizza",
+        "category": "Pizza",
+        "price": 299,
+        "desc": " feta · spinach · spices · garlic · olives",
+        "weight": "250gms"
+      }
+    ],
+    [
+      {
+        "id": 8,
+        "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2016/8/rectangle.jpg",
+        "name": "Sicilian Pizza",
+        "category": "Pizza",
+        "price": 349,
+        "desc": "mozzarella cheese · Italian sausage · pepperoni · bacon · green pepper · onion · parmesan cheese · dried Italian seasoning",
+        "weight": "300gms"
+      }
+    ],
+    [
+      {
+        "id": 3,
+        "image": "https://images.pexels.com/photos/4109072/pexels-photo-4109072.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "name": "Pepperoni Pizza",
+        "category": "Pizza",
+        "price": 199,
+        "desc": " pizza sauce · mozzarella cheese · pepperoni",
+        "weight": "180gms"
+      }
+    ],
+    [
+      {
+        "id": 2,
+        "image": "https://images.pexels.com/photos/1435903/pexels-photo-1435903.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "name": "Veggie Pizza",
+        "category": "Pizza",
+        "price": 149,
+        "desc": "roasted red peppers · baby spinach · onions · mushrooms · tomatoes · black olives · cheese",
+        "weight": "200gms"
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "image": "https://images.pexels.com/photos/4394619/pexels-photo-4394619.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "name": "Cheese Pizza",
+        "category": "Pizza",
+        "price": 149,
+        "desc": "Basil · Cheese · Tomatoes",
+        "weight": "150gms"
+      }
+    ]
+  ]
 }

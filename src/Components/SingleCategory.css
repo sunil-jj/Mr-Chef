@@ -16,7 +16,7 @@
     border-radius : 10px;
 }
 
-#default > p, #default > h4{
+#default > p, #default > h3, #default > h2{
     margin : auto;
     margin-top: 20px;
 }
@@ -31,7 +31,6 @@
     padding : 10px;
     color : black;
     margin-left : 30%;
-    margin-top: 45px;
     height : 13%;
     display : flex;
     justify-content: space-around;
@@ -50,7 +49,11 @@
     margin-top: -50px;
 }
 
-#desc > h4, #desc > p, #desc > h5{
+#default > button{
+     margin-top: 9%;
+}
+
+#desc > h4, #desc > p{
     margin : auto;
     height : 20%;
     margin-top : 50px;
@@ -79,4 +82,17 @@ button :focus{
     height :30px;
     border-radius : 20px;
     padding: 7px;
+}
+
+.price {
+    display:flex;
+    justify-content: center ;
+}
+
+.price > *{
+    padding: 5px;
+}
+
+.price > h4{
+    text-decoration: line-through;
 }
