@@ -273,61 +273,6 @@
       "weight": "400gms"
     }
   ],
-  "cart": [
-    [
-      {
-        "id": 9,
-        "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2016/8/onions.jpg",
-        "name": "Greek Pizza",
-        "category": "Pizza",
-        "price": 299,
-        "desc": " feta · spinach · spices · garlic · olives",
-        "weight": "250gms"
-      }
-    ],
-    [
-      {
-        "id": 8,
-        "image": "https://cdnimg.webstaurantstore.com/uploads/blog/2016/8/rectangle.jpg",
-        "name": "Sicilian Pizza",
-        "category": "Pizza",
-        "price": 349,
-        "desc": "mozzarella cheese · Italian sausage · pepperoni · bacon · green pepper · onion · parmesan cheese · dried Italian seasoning",
-        "weight": "300gms"
-      }
-    ],
-    [
-      {
-        "id": 3,
-        "image": "https://images.pexels.com/photos/4109072/pexels-photo-4109072.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "name": "Pepperoni Pizza",
-        "category": "Pizza",
-        "price": 199,
-        "desc": " pizza sauce · mozzarella cheese · pepperoni",
-        "weight": "180gms"
-      }
-    ],
-    [
-      {
-        "id": 2,
-        "image": "https://images.pexels.com/photos/1435903/pexels-photo-1435903.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "name": "Veggie Pizza",
-        "category": "Pizza",
-        "price": 149,
-        "desc": "roasted red peppers · baby spinach · onions · mushrooms · tomatoes · black olives · cheese",
-        "weight": "200gms"
-      }
-    ],
-    [
-      {
-        "id": 1,
-        "image": "https://images.pexels.com/photos/4394619/pexels-photo-4394619.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "name": "Cheese Pizza",
-        "category": "Pizza",
-        "price": 149,
-        "desc": "Basil · Cheese · Tomatoes",
-        "weight": "150gms"
-      }
-    ]
-  ]
+  "cart": [],
+  "users" : []
 }
