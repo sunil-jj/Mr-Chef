@@ -9,6 +9,8 @@ import {
   AlertDescription,
 } from '@chakra-ui/react'
 import Loading from './loading';
+import Successfullpage from './successfullpage';
+import { useToast } from '@chakra-ui/react';
 
 
 import OTPInput from "otp-input-react"
@@ -25,11 +27,15 @@ const [otppage,setotppage]=useState("none")
 const [genotp,setgenotp]=useState(0);
 const [isload,setisLoad]=useState(false);
 const [paybtn,setpaybtn]=useState(true)
+const [successfull,setsuccessfull]=useState(false)
+const toast=useToast();
+const toast2=useToast();
   let checkotp=()=>{
     if(genotp==otp){
             setcheckpage("none");
             setotppage("none");
             setisLoad(true)
+           
             
             
 
@@ -37,11 +43,25 @@ const [paybtn,setpaybtn]=useState(true)
             let timeout;
 
             function myFunction() {
-              timeout = setTimeout(alertFunc, 3000);
+              timeout = setTimeout(alertFunc, 5000);
+             
             }
             
             function alertFunc() {
               setisLoad(false)
+              setsuccessfull(true)
+
+
+              function myFunction2() {
+                timeout = setTimeout(alertFunc2, 3000);
+               
+              }
+              function alertFunc2() {
+                setsuccessfull(false)
+                // navigate to home//
+              }
+              myFunction2()
+              
             }
             myFunction();
 
@@ -54,7 +74,14 @@ const [paybtn,setpaybtn]=useState(true)
 
            
     }  else{
-      alert('Invalid OTP')
+      toast({
+        position: 'top',
+        title: 'Invalid OTP.',
+        description: "Invalid OTP",
+        status: 'error',
+        duration: 2000,
+        isClosable: true,
+      })
       setotp("")
       } }
   
@@ -67,7 +94,16 @@ const [paybtn,setpaybtn]=useState(true)
     let num=Math.floor(Math.random()*10000)
     setpaybtn(false)
   setgenotp(num)
-  alert("OTP Is "+ num)
+
+  toast({
+    position: 'top',
+    title: '',
+    description: `Your OTP Is ${num}`,
+    status: 'success',
+    duration: 3000,
+    isClosable: true,
+  })
+  // alert("OTP Is "+ num)
   console.log(num)
 
     console.log(otp)
@@ -90,10 +126,12 @@ let handlecrbtn=()=>{
  }
  
   return (
-       <Box >
+       <Box height="900px"  >
       <Box display={checkoutpage}>
+       
       <Center>
       <Stack>
+      <Box w="500px"> <Text fontSize="25px" fontWeight="extrabold" fontFamily="cursive" align="right">Checkout</Text></Box>
       <Box w="500px" height="600px" align="left" padding="15px" borderWidth='2px'backgroundColor="white" borderRadius='lg' overflow='hidden'>
        <Text fontSize="18px">DELIVERY TERMS</Text>
        <Checkbox size ="md" iconColor="black" borderColor="black" colorScheme="yellow">Delivery</Checkbox><br />
@@ -104,7 +142,7 @@ let handlecrbtn=()=>{
         <Text fontSize="18px">DELIVERY ADDRESS</Text>
 
 <Input variant='flushed' focusBorderColor='yellow.300' width="100%" placeholder="Street" />
-<Input variant='flushed' focusBorderColor='yellow.300' width="100%" placeholder="Street" />
+<Input variant='flushed' focusBorderColor='yellow.300' width="100%" placeholder="Landmark" />
 <Input variant='flushed' focusBorderColor='yellow.300' width="100%" placeholder="House" />
 <Flex>
 <Input variant='flushed' focusBorderColor='yellow.300' width="70%" placeholder="Entrance" />
@@ -193,19 +231,28 @@ let handlecrbtn=()=>{
    
 
       </Box>
-      <Box display={otppage}>
+      <Box fill="100%"  height="900px" display={otppage} bgImage="https://img.freepik.com/free-photo/top-view-asian-food-ingredients-mix-with-copy-space_23-2148377557.jpg?w=2000&t=st=1685548967~exp=1685549567~hmac=da4379723d1636bb7bbcdb5a56b83e07691cf735962583e581a62c0c3b363301" bgSize="100% 1500px" backgroundPosition="center"  bgRepeat="no-repeat" >
+{/* https://as2.ftcdn.net/v2/jpg/02/34/20/03/1000_F_234200318_qGqFF2C4sFC1oCYhiKwWFBcbgUVCqO2W.jpg */}
+        
       <Center>
-        <Box bg='blue.100' width="400px" height="400px" padding= "50px" margin="100px">
+        <Box border="1px solid white" borderRadius="30px" width="300px" height="250px" padding= "50px" margin="200px 0px 0px 500px">
         <Center >
-    <OTPInput margin="50px" value={otp} onChange={setotp} autoFocus OTPLength={4} otpType="number" disabled={false}  />
-    <Button onClick={checkotp}>Verify OTP</Button>
-    
+        <Stack>
+          <Text color="white">OTP has been sent to you !!!</Text><br />
+
+    <OTPInput value={otp} onChange={setotp} autoFocus OTPLength={4} otpType="number" disabled={false}  /><br />br
+
+    <Button  onClick={checkotp}>Verify OTP</Button>
+    <Button variant='link' color='white' onClick={handleClick}>Resend OTP</Button>
+    </Stack>
     </Center>
-    
+   
     </Box>
     </Center>
+    
       </Box>
       {isload? <Loading/>:""}
+      {successfull? <Successfullpage/>:""}
       </Box>
   )
 }

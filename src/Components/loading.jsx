@@ -4,6 +4,10 @@ import { Image ,center} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 function Loading(){
 
+    const [done,setdone]=useState()
+useEffect(()=> {
+    setdone(true)
+})
 
     return <>
     <Center>
