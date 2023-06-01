@@ -125,7 +125,11 @@ function Signup(props) {
     e.preventDefault();
     let userDataObj = { name, mobile, email, password };
     if (isValidated()) {
-      axios.post("http://localhost:8080/users", userDataObj)
+      axios.get("http://localhost:8080/users")
+      .then((res)=>{
+        const user = res.data.find((data) => data.mobile === mobile);
+        if(!user){
+          axios.post("http://localhost:8080/users", userDataObj)
         .then((res) => {
           dispatch(postUserSuccess(res.data));
           toast({
@@ -138,7 +142,7 @@ function Signup(props) {
           setloader(true);
     setTimeout(() => {
       setloader(false);
-    }, 5000);
+    }, 2000);
           // navigate("/signin");
         })
         .catch((err) => {
@@ -152,6 +156,16 @@ function Signup(props) {
           });
           // toast.error("Failed :" + err.message);
         });
+        }else{
+          toast({
+            title: "Registered number",
+            description: "Enter the new mobile number",
+            status: "warning",
+            duration: 2000,
+            isClosable: true,
+          });
+        }
+      })
     }
   };
 
@@ -300,7 +314,7 @@ function Signup(props) {
                         <Checkbox onChange={()=>setisChecked(!isChecked)} colorScheme="green" pr={"7px"} />{" "}
                         <p style={{ fontSize: "15px" }}>
                           I accept
-                          <span style={{ fontWeight: "bold", color: "green" }}>
+                          <span style={{ fontWeight: "bold", color: "green", paddingLeft:"5px" }}>
                             Terms of Use
                           </span>
                         </p>
@@ -347,3 +361,9 @@ function Signup(props) {
 }
 
 export { Signup };
+
+
+
+
+
+

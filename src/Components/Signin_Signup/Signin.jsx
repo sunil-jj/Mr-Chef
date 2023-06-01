@@ -7,6 +7,7 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import axios from 'axios'
 import { useDispatch } from "react-redux";
 import { fetchUserFaliure, fetchUserSuccess } from "../../Redux/actionCreator";
+import { ResetPassword } from "./ResetPassword";
 import {
   Box,
   Center,
@@ -18,7 +19,9 @@ import {
   Input,
   Button,
   Icon,
-  useToast
+  useToast,
+  Text,
+  useDisclosure
 } from "@chakra-ui/react";
 import Loader from "./Loader";
 function Signin(props) {
@@ -28,12 +31,14 @@ function Signin(props) {
     field2: false,
     field4: false,
   });
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const [show, setShow] = useState(false);
   const [captcha, setcaptcha] = useState(false);
   const [loader, setloader] = useState(false);
   const [mobile, setmobile] = useState("");
   const [password, setpassword] = useState("");
   const handleClick = () => setShow(!show);
+  
 
   const onChange = () => {
     // captcha
@@ -54,12 +59,12 @@ function Signin(props) {
     }));
   };
 
-  const handleLoader = () => {
-    setloader(true);
-    setTimeout(() => {
-      setloader(false);
-    }, 5000);
-  };
+  // const handleLoader = () => {
+  //   setloader(true);
+  //   setTimeout(() => {
+  //     setloader(false);
+  //   }, 1000);
+  // };
 
   const isValidated = () => {
     let isproceed = true;
@@ -111,7 +116,7 @@ function Signin(props) {
           setloader(true);
     setTimeout(() => {
       setloader(false);
-    }, 5000);
+    }, 2000);
          }else{
           toast({
             title: "Wrong Credentials",
@@ -197,6 +202,7 @@ function Signin(props) {
           </InputRightElement>
         </InputGroup>
       </Stack>
+      <Text onClick={onOpen} _hover={{color:"#DD6A1F", cursor:"pointer", textDecoration:"underline"}} pt="5px" textAlign={"end"}>Reset Password</Text>
       <Center pt={"20px"}>
         {/* google captcha */}
         <ReCAPTCHA
@@ -208,11 +214,12 @@ function Signin(props) {
         {
          captcha ? <Button onClick={handleSubmit} px="20px" colorScheme="orange">
             {loader ? <Loader /> : "Login Now"}
-          </Button>: <Button isDisabled px="20px" onClick={handleLoader} colorScheme="orange">
+          </Button>: <Button isDisabled px="20px" colorScheme="orange">
             {loader ? <Loader /> : "Login Now"}
           </Button>
         }
       </Center>
+      <ResetPassword isOpen={isOpen} onClose={onClose}/>
     </Box>
   );
 }

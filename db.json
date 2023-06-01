@@ -219,7 +219,7 @@
       "name": "sumit",
       "mobile": "1234567890",
       "email": "sumit@123gmail.com",
-      "password": "sumit@123"
+      "password": "saurabh"
     },
     {
       "name": "anaanya",
@@ -232,8 +232,22 @@
       "name": "sunil",
       "mobile": "2345686546",
       "email": "sunil@123gmail.com",
-      "password": "sunit@6354",
+      "password": "sunil",
       "id": 3
+    },
+    {
+      "name": "sumit",
+      "mobile": "123456789",
+      "email": "sumit@gmail.com",
+      "password": "dfsdgs",
+      "id": 4
+    },
+    {
+      "name": "sumit",
+      "mobile": "123456780",
+      "email": "sumit@gmail.com",
+      "password": "dfsdgs",
+      "id": 5
     }
   ]
 }
