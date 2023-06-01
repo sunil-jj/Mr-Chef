@@ -52,13 +52,13 @@ function ResetPassword({isOpen, onClose}) {
   const handleSubmitButton = (e) => {
     e.preventDefault();
     axios
-      .get("http://localhost:8080/users")
+      .get("http://localhost:8000/users")
       .then((res) => {
         const user = res.data.find((data) => data.mobile === mobile);
         if (user) {
           const updatedUser = { ...user, password: password };
           axios
-            .put(`http://localhost:8080/users/${user.id}`, updatedUser)
+            .put(`http://localhost:8000/users/${user.id}`, updatedUser)
             .then((res) => {
               toast({
                 title: "Reset successfully",
