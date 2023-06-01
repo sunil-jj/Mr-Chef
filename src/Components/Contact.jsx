@@ -6,7 +6,7 @@ function Contact() {
 
       <div className='topbox'>
         <div style={{width:"35%",marginLeft:"37%"}}>
-          <h3 style={{color:"orange",fontFamily:"sans-serif",fontWeight:"bold"}} > Subscribe to our social  networks so as <br/> not to miss interesting events and discounts!</h3>
+          <h3 style={{color:"orange",fontFamily:"sans-serif",fontWeight:"bold",justifyContent:"center"}} > Subscribe to our social  networks so as <br/> not to miss interesting events and discounts!</h3>
         </div>
        
 
