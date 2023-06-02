@@ -19,7 +19,7 @@ const CategoryDetails = () => {
 
     useEffect(() => {
         dispatch(getDataRequest());
-        axios.get(`http://localhost:8000/streetFood`)
+        axios.get(`http://localhost:8000/${category}`)
             .then((res) => {
                 dispatch(getDataSuccess(res.data));
             })
