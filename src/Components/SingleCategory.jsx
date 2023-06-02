@@ -7,7 +7,7 @@ import { BsBag } from "react-icons/bs";
 import { useToast } from '@chakra-ui/react';
 //import { Heading } from '@chakra-ui/react';
 
-const SingleCategory = ({ ele }) => {
+const SingleCategory = ({ id, image, name, category, price, desc, weight }) => {
     const [hovered, setHovered] = useState(false);
     const dispatch = useDispatch();
     const toast = useToast();
@@ -53,25 +53,25 @@ const SingleCategory = ({ ele }) => {
     
     return (
         <div onMouseEnter={showDetails} onMouseLeave={hideDetails} className="relative">
-            <div key={ele.id} className={`${hovered ? 'hidden' : ''}`} id="default">
-                <img src={ele.image} alt={ele.name} />
-                <h3 style={{fontSize:20, fontFamily:'cursive', color:'grey'}}>{ele.category}</h3>
-                <h2 style={{fontSize:25, fontFamily:'cursive'}}>{ele.name}</h2>
+            <div key={id} className={`${hovered ? 'hidden' : ''}`} id="default">
+                <img src={image} alt={name} />
+                <h3 style={{fontSize:20, fontFamily:'cursive', color:'grey'}}>{category}</h3>
+                <h2 style={{fontSize:25, fontFamily:'cursive'}}>{name}</h2>
                 <div className='price' style={{fontSize:20, fontFamily:'cursive'}}>
-                    <h3>${ele.price}</h3>
-                    <h4>{(ele.price*1.05).toFixed(2)}</h4>
+                    <h3>${price}</h3>
+                    <h4>{(price*1.05).toFixed(2)}</h4>
                     <h3 style={{color:'green'}}><b>5% off</b></h3>
                 </div>
-                <button onClick={() => handleClick(ele.id)}>
+                <button onClick={() => handleClick(id)}>
                     <div className="cartIcon"><BsBag/></div>
                     Add To Cart
                 </button>
             </div>
             <div className={`${hovered ? '' : 'hidden'}`} id="desc">
-                <h4 style={{fontSize:20, fontFamily:'cursive'}}>{ele.name}</h4><hr />
-                <p style={{fontSize:18, fontFamily:'cursive'}}>{ele.desc}</p><hr />
-                <h4 style={{fontSize:20, fontFamily:'cursive'}}>{ele.weight}</h4>
-                <button onClick={() => handleClick(ele.id)}>
+                <h4 style={{fontSize:20, fontFamily:'cursive'}}>{name}</h4><hr />
+                <p style={{fontSize:18, fontFamily:'cursive'}}>{desc}</p><hr />
+                <h4 style={{fontSize:20, fontFamily:'cursive'}}>{weight}</h4>
+                <button onClick={() => handleClick(id)}>
                     <div className="cartIcon"><BsBag/></div>
                     Add To Cart
                 </button>

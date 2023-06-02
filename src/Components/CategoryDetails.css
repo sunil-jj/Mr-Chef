@@ -18,3 +18,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+.searchBar{
+    width : 50%;
+    background-color: #b1c8d4;
+    border-radius : 20px;
+    margin : auto;
+    margin-top : 20px;
+    padding : 10px;
+}
