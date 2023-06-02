@@ -4,7 +4,7 @@ import { reducer } from "./reducer";
 export const store = legacy_createStore(reducer);
 
 
-export const store=legacy_createStore(reducer);
+
 
 store.subscribe(()=> {
     console.log(store.getState())
