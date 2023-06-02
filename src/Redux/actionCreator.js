@@ -19,18 +19,6 @@ export const getDataFailure = () => {
     return { type : GET_DATA_FAILURE }
 }
 
-/* export const getStreetFoodRequest = () => {
-    return { type : GET_STREETFOOD_REQUEST }
-}
-
-export const getStreetFoodSuccess = (payload) => {
-    return { type : GET_STREETFOOD_SUCCESS, payload }
-}
-
-export const getStreetFoodFailure = () => {
-    return { type : GET_STREETFOOD_FAILURE }
-} */
-
 export const addCartRequest = () => {
     return { type : ADD_CART_REQUEST }
 }
