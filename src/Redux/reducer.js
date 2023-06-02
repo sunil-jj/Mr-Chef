@@ -1,4 +1,3 @@
-
 import {
     GET_DATA_REQUEST,
     GET_DATA_SUCCESS,
@@ -60,3 +59,4 @@ const initstate = {
 export const reducer = (store = initstate, action) => {
 
 }
+

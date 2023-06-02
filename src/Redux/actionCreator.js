@@ -42,3 +42,4 @@ export const addCartSuccess = (payload) => {
 export const addCartFailure = () => {
     return { type : ADD_CART_FAILURE }
 }
+
