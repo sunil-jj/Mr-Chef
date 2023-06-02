@@ -1,17 +1,22 @@
-import logo from './logo.svg';
 
-import Navbar from './Components/Navbar';
-import About from './Components/About';
-import HomePage from './Components/HomePage';
-import Contact from './Components/Contact';
+import './App.css';
+import MainMenu from './Components/MainMenu';
 
+//import CategoryDetails from './Components/CategoryDetails';
 
 function App() {
   return (
     <div className="App">
+
+      <MainMenu/>
+
+
      <HomePage/>
+
     </div>
   );
 }
 
 export default App;
+
+

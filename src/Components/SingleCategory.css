@@ -1,0 +1,98 @@
+.relative {
+    position: relative;
+    width: 90%;
+    height : 400px;
+    margin: auto;
+    margin-top : 100px;
+}
+
+.relative > div { 
+    width: 90%;
+    height : 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color : white;
+    border-radius : 10px;
+}
+
+#default > p, #default > h3, #default > h2{
+    margin : auto;
+    margin-top: 20px;
+}
+
+.relative p{
+    color : grey;
+}
+
+.relative button{
+    background-color: yellow;
+    border-radius: 10px;
+    padding : 10px;
+    color : black;
+    margin-left : 30%;
+    height : 13%;
+    display : flex;
+    justify-content: space-around;
+}
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
+.relative img {
+    width: 230px;
+    height: 230px;
+    border-radius: 150px;
+    margin-left : 50px;
+    margin-top: -50px;
+}
+
+#default > button{
+     margin-top: 9%;
+}
+
+#desc > h4, #desc > p{
+    margin : auto;
+    height : 20%;
+    margin-top : 50px;
+}
+
+#desc > button {
+    margin-top : -3.5%;
+}
+
+button :hover{
+    background-color: white;
+}
+
+button :focus{
+    background-color: orange;
+}
+
+#desc > p{
+    margin-top : 25px;
+    margin-bottom : 25px;
+}
+
+.cartIcon{
+    background-color: white;
+    width : 30px;
+    height :30px;
+    border-radius : 20px;
+    padding: 7px;
+}
+
+.price {
+    display:flex;
+    justify-content: center ;
+}
+
+.price > *{
+    padding: 5px;
+}
+
+.price > h4{
+    text-decoration: line-through;
+}
