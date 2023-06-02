@@ -1,16 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Checkout from './Components/checkout';
+
+import MainMenu from './Components/MainMenu';
+
+//import CategoryDetails from './Components/CategoryDetails';
 
 
 function App() {
   return (
     <div className="App">
-      <Checkout/>
-      {/* <Otppage/> */}
-      
-            </div>
+
+
+      <MainMenu/>
+
+
+     <HomePage/>
+
+    </div>
+
   );
 }
 
 export default App;
+
+
