@@ -1,3 +1,4 @@
+
 import {
     GET_DATA_REQUEST,
     GET_DATA_SUCCESS,
@@ -52,4 +53,10 @@ export const reducer = (store = initstate , action) => {
             return store
         }
     }
+
+const initstate = { 
+}
+
+export const reducer = (store = initstate, action) => {
+
 }
