@@ -25,7 +25,7 @@ const SingleCategory = ({ id, image, name, category, price, desc, weight }) => {
         })
         console.log(cartItem);
         dispatch(addCartRequest());
-        axios.post('http://localhost:8000/cart',cartItem)
+        axios.post('http://localhost:8000/cart',cartItem[0])
         .then((res)=> {
             console.log(res);
             dispatch(addCartSuccess(res.data))

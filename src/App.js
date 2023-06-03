@@ -1,24 +1,31 @@
 
-import './App.css';
-
+// import './App.css';
 import MainMenu from './Components/MainMenu';
 
-
-//import CategoryDetails from './Components/CategoryDetails';
+import CategoryDetails from './Components/CategoryDetails';
+import Navbar from "./Components/Navbar"
+import AllRoute from './Components/Routes/AllRoute';
 
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
+      <AllRoute/>
 
+      {/* <MainMenu/> */}
 
-      <MainMenu/>
+{/* <Signup /> */}
+     {/* <HomePage/>
 
+     <YourOrder/>
 
-     <HomePage/>
+     <Checkout/> */}
+
+     {/* <SinglrCategory/> */}
+     {/* <CategoryDetails /> */}
 
     </div>
-
   );
 }
 

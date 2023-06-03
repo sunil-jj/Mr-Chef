@@ -8,6 +8,7 @@ import axios from 'axios'
 import { useDispatch } from "react-redux";
 import { fetchUserFaliure, fetchUserSuccess } from "../../Redux/loginRedux/loginActionCreater";
 import { ResetPassword } from "./ResetPassword";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Center,
@@ -27,6 +28,7 @@ import Loader from "./Loader";
 function Signin(props) {
   const toast = useToast()
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const [inputFocus, setInputFocus] = useState({
     field2: false,
     field4: false,
@@ -99,7 +101,7 @@ function Signin(props) {
     e.preventDefault();
     let userDataObj = { mobile, password };
     if (isValidated()) {
-      axios.get("http://localhost:8080/users")
+      axios.get("http://localhost:8000/users")
         .then((res) => {
          const filterredData = res.data.filter((data) => {
           return data.mobile ===mobile && data.password ===password
@@ -116,6 +118,7 @@ function Signin(props) {
           setloader(true);
     setTimeout(() => {
       setloader(false);
+      navigate("/")
     }, 2000);
          }else{
           toast({

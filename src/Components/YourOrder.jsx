@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from "axios"
+import { useDispatch } from 'react-redux';
+import { addCartRequest, addCartFailure, addCartSuccess } from '../Redux/actionCreator';
 import {
         Box,
         VStack,
@@ -12,18 +15,21 @@ import {
         useMediaQuery,
 } from '@chakra-ui/react';
 import { CloseIcon } from '@chakra-ui/icons';
+import { useSelector } from 'react-redux';
 
 const YourOrder = () => {
+        const dispatch = useDispatch()
+        const [cartProduct, setCartProduct] = useState([])
         // Sample data for demonstration purposes
-        const [orders, setOrders] = useState([
-                { id: 1, name: 'Product 1', price: 10.99, image: 'https://via.placeholder.com/150', quantity: 1 },
-                { id: 2, name: 'Product 2', price: 15.99, image: 'https://via.placeholder.com/150', quantity: 1 },
-        ]);
+        // const [orders, setOrders] = useState([
+        //         { id: 1, name: 'Product 1', price: 10.99, image: 'https://via.placeholder.com/150', quantity: 1 },
+        //         { id: 2, name: 'Product 2', price: 15.99, image: 'https://via.placeholder.com/150', quantity: 1 },
+        // ]);
 
         const [isLargerThan] = useMediaQuery('(min-width: 768px)');
 
         const handleQuantityChange = (id, action) => {
-                const updatedOrders = orders.map((order) => {
+                const updatedOrders = cartProduct.map((order) => {
                         if (order.id === id) {
                                 if (action === 'increase') {
                                         return { ...order, quantity: order.quantity + 1 };
@@ -33,23 +39,48 @@ const YourOrder = () => {
                         }
                         return order;
                 });
-                setOrders(updatedOrders);
+                setCartProduct(updatedOrders);
         };
 
+        // const cartProduct = useSelector((store)=>{
+        //         return store.reducer.cart
+        // })
+        // console.log(cartProduct, "cart product")
         const handleRemoveItem = (id) => {
-                const updatedOrders = orders.filter((order) => order.id !== id);
-                setOrders(updatedOrders);
+                axios.delete(`http://localhost:8000/cart/${id}`)
+                // dispatch(addCartRequest())
+                axios.get("http://localhost:8000/cart")
+                .then((res)=>{
+                        setCartProduct(res.data)
+                        // console.log(res.data.data)
+                        // dispatch(addCartSuccess(res.data))
+                }).catch((err) => {
+                        // dispatch(addCartFailure())
+                })
+                // const updatedOrders = cartProduct.filter((order) => order.id !== id);
+                // setCartProduct(updatedOrders);
         };
+
+        useEffect(()=>{
+                // dispatch(addCartRequest())
+                axios.get("http://localhost:8000/cart")
+                .then((res)=>{
+                        setCartProduct(res.data)
+                }).catch((err) => {
+                        // dispatch(addCartFailure())
+                })
+        },[])
+
 
         return (
-                <Flex w="100vw" h="100vh" justify="center" align="center" bg="gray.100">
-                        <Box w={isLargerThan ? '500px' : '100%'} p={4} borderWidth={1} borderRadius="lg">
+                <Flex w="100vw" h="100vh" justify="center" align="center" bg="#011029">
+                        <Box w={isLargerThan ? '500px' : '100%'} p={4} borderWidth={1} borderRadius="lg" bg="white">
 
                                 <VStack spacing={4} align="stretch">
                                         <Text fontSize="2xl" fontWeight="bold">
                                                 Your Order
                                         </Text>
-                                        {orders.map((order) => (
+                                        {cartProduct.map((order) => (
                                                 <Box key={order.id}>
                                                         <HStack>
                                                                 <Image
@@ -103,7 +134,7 @@ const YourOrder = () => {
                                                 <Text fontWeight="bold">Total:</Text>
                                                 <Spacer />
                                                 <Text fontWeight="bold">
-                                                        ${orders.reduce((sum, order) => sum + order.price * order.quantity, 0).toFixed(2)}
+                                                        ${cartProduct.reduce((sum, order) => sum + order.price * order.quantity, 0).toFixed(2)}
                                                 </Text>
                                         </Flex>
                                         <Button

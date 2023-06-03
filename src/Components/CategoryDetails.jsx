@@ -17,17 +17,20 @@ const CategoryDetails = () => {
         return store.data;
     })
 
+    console.log(category, "Category")
+
     useEffect(() => {
         dispatch(getDataRequest());
         axios.get(`http://localhost:8000/${category}`)
             .then((res) => {
+                console.log(res.data, "Category details")
                 dispatch(getDataSuccess(res.data));
             })
             .catch((err) => {
                 dispatch(getDataFailure());
                 console.log(err);
             })
-    })
+    },[])
 
     return (
         <div>

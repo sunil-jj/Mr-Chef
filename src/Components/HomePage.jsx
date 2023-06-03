@@ -1,16 +1,14 @@
 
 import React from 'react'
-import Navbar from './Navbar';
-
+import {Link} from"react-router-dom"
 
 
 
 
 function HomePage() {
   return (
-    <div> 
-      <Navbar/>    
-    <div style={{position:"relative",marginTop:"50px"}} className='banner'>
+    <div>  
+    <div style={{position:"relative"}} className='banner'>
 
        <img  style={{width:"100%",height:"50%"}} src=" https://media.istockphoto.com/id/1301482898/photo/pepperoni-pizza-on-wooden-table.jpg?b=1&s=170667a&w=0&k=20&c=ULNbqiJ3sLVoKy3RwtBY6DuOPc0bXm8S87TnCmKPEfg=" />
         <div style={{position:"absolute",top:"30px"}}>

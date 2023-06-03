@@ -125,11 +125,11 @@ function Signup(props) {
     e.preventDefault();
     let userDataObj = { name, mobile, email, password };
     if (isValidated()) {
-      axios.get("http://localhost:8080/users")
+      axios.get("http://localhost:8000/users")
       .then((res)=>{
         const user = res.data.find((data) => data.mobile === mobile);
         if(!user){
-          axios.post("http://localhost:8080/users", userDataObj)
+          axios.post("http://localhost:8000/users", userDataObj)
         .then((res) => {
           dispatch(postUserSuccess(res.data));
           toast({

@@ -7,7 +7,8 @@
       "category": "Pizza",
       "price": 149,
       "desc": "Basil · Cheese · Tomatoes",
-      "weight": "150gms"
+      "weight": "150gms",
+      "quantity": 1
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "category": "Pizza",
       "price": 149,
       "desc": "roasted red peppers · baby spinach · onions · mushrooms · tomatoes · black olives · cheese",
-      "weight": "200gms"
+      "weight": "200gms",
+      "quantity": 1
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "category": "Pizza",
       "price": 199,
       "desc": " pizza sauce · mozzarella cheese · pepperoni",
-      "weight": "180gms"
+      "weight": "180gms",
+      "quantity": 1
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "category": "Pizza",
       "price": 179,
       "desc": " red tomatoes · white mozzarella · green basil",
-      "weight": "180gms"
+      "weight": "180gms",
+      "quantity": 1
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "category": "Pizza",
       "price": 249,
       "desc": "Rich tomato-based pizza sauce · Gooey mozzarella · Crispy savoury ham · Bursts of tangy pineapple",
-      "weight": "200gms"
+      "weight": "200gms",
+      "quantity": 1
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "category": "Pizza",
       "price": 249,
       "desc": "pepperoni · seasoned pork · beef · mushrooms · green bell peppers · onions",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "category": "Pizza",
       "price": 299,
       "desc": "raw tomatoes · mozzarella cheese · basil · olive oil",
-      "weight": "150gms"
+      "weight": "150gms",
+      "quantity": 1
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "category": "Pizza",
       "price": 349,
       "desc": "Italian sausage · pepperoni · bacon · green pepper · onion · cheese · dried Italian seasoning",
-      "weight": "300gms"
+      "weight": "300gms",
+      "quantity": 1
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "category": "Pizza",
       "price": 299,
       "desc": " feta · spinach · spices · garlic · olives",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "category": "Pizza",
       "price": 249,
       "desc": "chicken · peanut sauce · artichoke hearts · goat cheese",
-      "weight": "200gms"
+      "weight": "200gms",
+      "quantity": 1
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "category": "Pizza",
       "price": 299,
       "desc": "guanciale (cured pork) · eggs · Pecorino Romano cheese · spaghetti pasta · lots of black pepper",
-      "weight": "200gms"
+      "weight": "200gms",
+      "quantity": 1
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "category": "Pizza",
       "price": 349,
       "desc": "olive oil · garlic · cheese · vegetables such as spinach · tomato · herbs",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "category": "Pizza",
       "price": 299,
       "desc": "Tomato · onion · mozzarella · Oregano · olives · capers",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "category": "Pizza",
       "price": 249,
       "desc": "pepperoni · sausage · prosciutto · arugula · shaved zucchini · artichokes · olives · cherry tomatoes",
-      "weight": "350gms"
+      "weight": "350gms",
+      "quantity": 1
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "category": "Pizza",
       "price": 349,
       "desc": "Cheese · Onion · Green Pepper · Sausage · Pepperoni · Anchovy · Bacon · Black Olive · Mushroom",
-      "weight": "350gms"
+      "weight": "350gms",
+      "quantity": 1
     }
   ],
   "streetFood": [
@@ -144,7 +159,8 @@
       "category": "Street Food",
       "price": 149,
       "desc": "Burger buns · Pickled Jalapenos · Cheese Slices · Potatoes (Aloo) · Onion · Red Chilli powder",
-      "weight": "300gms"
+      "weight": "300gms",
+      "quantity": 1
     },
     {
       "id": 2,
@@ -153,7 +169,8 @@
       "category": "Street Food",
       "price": 299,
       "desc": "Cottage Cheese · Bell Peppers · green chutney · butter",
-      "weight": "150gm"
+      "weight": "150gm",
+      "quantity": 1
     },
     {
       "id": 3,
@@ -162,7 +179,8 @@
       "category": "Street Food",
       "price": 99,
       "desc": "Cheese · potato · Tomato Sauce",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 4,
@@ -171,7 +189,8 @@
       "category": "Street Food",
       "price": 399,
       "desc": "Fried Chicken stripes dipped in flour and bread crumbs · coated wit egg mix · fried or baked ",
-      "weight": "350gms"
+      "weight": "350gms",
+      "quantity": 1
     },
     {
       "id": 5,
@@ -180,7 +199,8 @@
       "category": "Street Food",
       "price": 189,
       "desc": "Chicken · picante sauce · sour cream · cheese · wrapped inside tortillas with salsa for dip",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 6,
@@ -189,7 +209,8 @@
       "category": "Street Food",
       "price": 141,
       "desc": "Includes chickpeas · potatoes · chutneys · papdi · curd · sev · yogurt · coriander leaves",
-      "weight": "200gms"
+      "weight": "200gms",
+      "quantity": 1
     },
     {
       "id": 7,
@@ -198,7 +219,8 @@
       "category": "Street Food",
       "price": 41,
       "desc": "peas · potatoes · masala · chilli · flatbread cone deep fried or baked",
-      "weight": "100gms"
+      "weight": "100gms",
+      "quantity": 1
     },
     {
       "id": 8,
@@ -207,7 +229,8 @@
       "category": "Street Food",
       "price": 181,
       "desc": "Soft idlis made of Toor dal and curd · vegetable lentil stew with chutney",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 9,
@@ -216,7 +239,8 @@
       "category": "Street Food",
       "price": 85,
       "desc": "Puffed rice · spices · potatoes · vegetables · coriander leaves · chanachur · mustard oil",
-      "weight": "150gms"
+      "weight": "150gms",
+      "quantity": 1
     },
     {
       "id": 10,
@@ -225,7 +249,8 @@
       "category": "Street Food",
       "price": 102,
       "desc": "Fuffy buns stuffed with a fried batter coated potato dumpling fritter · laced with spicy sweet chutney ",
-      "weight": "300gms"
+      "weight": "300gms",
+      "quantity": 1
     },
     {
       "id": 11,
@@ -234,7 +259,8 @@
       "category": "Street Food",
       "price": 209,
       "desc": "Classic vegetarian dish of dried white peas · garam masala · cumin powder · other spices · white flatbread (Kulcha)",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 12,
@@ -243,7 +269,8 @@
       "category": "Street Food",
       "price": 102,
       "desc": "Litti made of wheat flour filled with ginger · coriander · green chilli and pickle masala · eggplant · tomato · coriander leaves",
-      "weight": "500gms"
+      "weight": "500gms",
+      "quantity": 1
     },
     {
       "id": 13,
@@ -252,7 +279,8 @@
       "category": "Street Food",
       "price": 208,
       "desc": "Roasted Bhutta · himalayan salt · lemon · chilli powder",
-      "weight": "300gms"
+      "weight": "300gms",
+      "quantity": 1
     },
     {
       "id": 14,
@@ -261,7 +289,8 @@
       "category": "Street Food",
       "price": 140,
       "desc": "Poa with onion · peanuts · green chilli · coriander · mustard seeds · curry leaves · Chilli powder · potato · Jalebis made of flour and cornstarch",
-      "weight": "250gms"
+      "weight": "250gms",
+      "quantity": 1
     },
     {
       "id": 15,
@@ -270,9 +299,18 @@
       "category": "Street Food",
       "price": 150,
       "desc": "Chickpeas with bay leaf · cinnamon · cumin seeds · cloves · Bhature made of whole wheat flour and curd",
-      "weight": "400gms"
+      "weight": "400gms",
+      "quantity": 1
     }
   ],
   "cart": [],
-  "users" : []
+  "users": [
+    {
+      "name": "saurabh",
+      "mobile": "1234567890",
+      "email": "saurabh@gmail.com",
+      "password": "rrrr",
+      "id": 1
+    }
+  ]
 }

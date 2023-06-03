@@ -1,6 +1,8 @@
 import React from 'react';
-import { Box, Flex, Spacer,Link, ChakraProvider,extendTheme,Image } from '@chakra-ui/react';
-
+import { Box, Flex, Spacer, ChakraProvider,extendTheme,Image, Button, border } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
+import { BsCartPlusFill } from "react-icons/bs";
+import logo from "./Signin_Signup/images/w.png"
 
 
 
@@ -8,41 +10,37 @@ import { Box, Flex, Spacer,Link, ChakraProvider,extendTheme,Image } from '@chakr
 
 const Navbar = () => {
   return (
-    <div style={{width:"100%",height:"45px"}} className='Mainbar' >
-      <div   className='Image'>
-      <figure>
-  <img style={{width:"100px",marginTop:"2px",marginLeft:"18px"}} src=" https://thumbs.dreamstime.com/b/cartoon-logo-of-a-happy-chef-preparing-meal-with-bowl-and-whisk-222980548.jpg " alt="Description of the image"/>
+    <div style={{width:"100%",height:"95px", position:"relative"}} >
+      
+      <div style={{width:"150px", height:"100px", position:"absolute"}}   className='Image'>
+  <Link to="/"><img  style={{width:"90%",marginTop:"-20px",marginLeft:"18px"}} src={logo} alt="Description of the image"/></Link>
   
-</figure>
 </div>
 
+      <div  style={{marginTop:"25px",display:"flex", marginLeft:"500px", position:'absolute'}} className='menuaboutcontact'>
 
-      <div  style={{marginTop:"-75px",display:"flex",marginLeft:"35%"}} className='menuaboutcontact'>
-         <div style={{marginRight:"40px"}}>    
-        <select> 
-          <option value=""> Menu</option>
-          <option value="">Shawarma</option>
-          <option value="">East</option>
-          <option value="">Pizza</option>
-          <option value="">Drinks</option>
-          <option value="">Continental </option>
-          <option value="">Street Food</option>
-        </select>
+     
+      
+         <div style={{marginRight:"40px"}}> 
+         <Link to="/menu">  
+        <button >Menu</button>
+        </Link>
         </div>
+       
         <div style={{marginRight:"30px"}}>   
-        <Link> 
+        <Link to="/about"> 
          <button> About Us </button>
         </Link>
         </div>
         <div> 
-        <Link> 
+        <Link to="contact"> 
          <button> Contact Us </button>
         </Link>
         </div>
 
       </div>
 
-      <div style={{display:"flex"}} className='imagesicon'>
+      <div style={{display:"flex", paddingTop:"40px"}} className='imagesicon'>
         <div>
           <img style={{width:"8%",marginLeft:"176%",marginTop:"-28px",borderRadius:"10px"}} src="https://cdn-icons-png.flaticon.com/512/124/124010.png  " />
         </div>
@@ -55,10 +53,15 @@ const Navbar = () => {
         
       </div>
 
-      <div style={{display:"flex"}}>
-        <button style={{marginTop:"-45px",borderRadius:"10px",marginLeft:"80%",background:"yellow",padding:"12px",borderRadius:"10px"}}> Login </button>
+      <div style={{display:"flex", justifyContent:"end", marginRight:"150px"}}>
+        {/* <button style={{marginTop:"-60px",borderRadius:"10px",marginLeft:"80%",background:"yellow", padding:"12px",borderRadius:"10px"}}> Login </button> */}
+        <Link to="/signup">
+        <Button mt="-70px" size='lg'  colorScheme='yellow' variant='solid'>
+    Login
+  </Button>
+  </Link>
+     <Link to="cart"> <BsCartPlusFill style={{marginLeft:"40px", fontSize:"40px", marginTop:"-43px", cursor:"pointer"}}/></Link>
       </div>
-     
 
     </div>
     
