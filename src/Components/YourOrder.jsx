@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios"
 import { useDispatch } from 'react-redux';
 import { addCartRequest, addCartFailure, addCartSuccess } from '../Redux/actionCreator';
+import { useNavigate } from 'react-router-dom';
 import {
         Box,
         VStack,
@@ -19,6 +20,7 @@ import { useSelector } from 'react-redux';
 
 const YourOrder = () => {
         const dispatch = useDispatch()
+        const navigate = useNavigate()
         const [cartProduct, setCartProduct] = useState([])
         // Sample data for demonstration purposes
         // const [orders, setOrders] = useState([
@@ -147,6 +149,7 @@ const YourOrder = () => {
                                                 color='black'
                                                 borderColor="yellow.500"
                                                 _hover={{ bg: 'yellow.500', color: 'white' }}
+                                                onClick={()=>navigate("/checkout")}
                                         >
                                                 Checkout
                                         </Button>

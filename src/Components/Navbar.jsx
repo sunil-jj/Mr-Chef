@@ -66,12 +66,9 @@ const [name, setName] = useState(false)
       <div style={{display:"flex", justifyContent:"end", marginRight:"150px"}}>
         {/* <button style={{marginTop:"-60px",borderRadius:"10px",marginLeft:"80%",background:"yellow", padding:"12px",borderRadius:"10px"}}> Login </button> */}
         <Link to="/signup">
-        <Button isDisabled={name} mt="-70px" size='lg'  colorScheme='yellow' variant='solid'>
-    Login
+        <Button mt="-70px" size='lg'  colorScheme='yellow' variant='solid'>
+    {userName===undefined ? "Login" : `Hi ${userName}`}
   </Button>
-  {
-   name ? <div>Hi {userName}</div> : <div></div>
-  }
   </Link>
      <Link to="cart"> <BsCartPlusFill style={{marginLeft:"40px", fontSize:"40px", marginTop:"-43px", cursor:"pointer"}}/></Link>
       </div>

@@ -6,6 +6,7 @@ import About from "../About"
 import Contact from "../Contact"
 import YourOrder from "../YourOrder"
 import CategoryDetails from "../CategoryDetails"
+import Checkout from "../checkout"
 import { Route, Routes } from 'react-router-dom';
 function AllRoute() {
     return (
@@ -17,6 +18,7 @@ function AllRoute() {
            <Route path="/contact" element={<Contact/>}/>
            <Route path="/cart" element={<YourOrder/>}/>
            <Route path="/CategoryDetails/:category" element={<CategoryDetails/>}/>
+           <Route path="/checkout" element={<Checkout/>}/>
         </Routes>
     );
 }

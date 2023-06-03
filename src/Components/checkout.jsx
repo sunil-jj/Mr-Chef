@@ -14,8 +14,10 @@ import { useToast } from '@chakra-ui/react';
 
 
 import OTPInput from "otp-input-react"
+import { useNavigate } from 'react-router-dom';
 
 function Checkout() {
+  const navigate = useNavigate()
   const [creditCard,setcreditcard]=useState({state:"none",
  cardNo:"",
 cvv:"",
@@ -58,7 +60,7 @@ const toast2=useToast();
               }
               function alertFunc2() {
                 setsuccessfull(false)
-                // navigate to home//
+                navigate("/")
               }
               myFunction2()
               
