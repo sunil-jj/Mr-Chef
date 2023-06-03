@@ -3,12 +3,22 @@ import { Box, Flex, Spacer, ChakraProvider,extendTheme,Image, Button, border } f
 import { Link } from 'react-router-dom';
 import { BsCartPlusFill } from "react-icons/bs";
 import logo from "./Signin_Signup/images/w.png"
+import { useSelector } from 'react-redux';
+import { useState, useEffect } from 'react';
 
 
 
 
 
 const Navbar = () => {
+const [name, setName] = useState(false)
+  const userName = useSelector((store)=>{
+    return store.reducerReducer.userDetails.name
+  })
+  console.log(userName)
+  useEffect(()=>{
+   setName(true)
+  },[])
   return (
     <div style={{width:"100%",height:"95px", position:"relative"}} >
       
@@ -56,9 +66,12 @@ const Navbar = () => {
       <div style={{display:"flex", justifyContent:"end", marginRight:"150px"}}>
         {/* <button style={{marginTop:"-60px",borderRadius:"10px",marginLeft:"80%",background:"yellow", padding:"12px",borderRadius:"10px"}}> Login </button> */}
         <Link to="/signup">
-        <Button mt="-70px" size='lg'  colorScheme='yellow' variant='solid'>
+        <Button isDisabled={name} mt="-70px" size='lg'  colorScheme='yellow' variant='solid'>
     Login
   </Button>
+  {
+   name ? <div>Hi {userName}</div> : <div></div>
+  }
   </Link>
      <Link to="cart"> <BsCartPlusFill style={{marginLeft:"40px", fontSize:"40px", marginTop:"-43px", cursor:"pointer"}}/></Link>
       </div>

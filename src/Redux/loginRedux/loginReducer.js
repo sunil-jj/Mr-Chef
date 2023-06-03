@@ -2,7 +2,7 @@ import { POST_USER_SUCCESS, POST_USER_FALIURE, FETCH_USER_FALIURE, FETCH_USER_SU
 
 
 const initstate={
-userDetails:{},
+userDetails:[],
 isError:false
 }
 

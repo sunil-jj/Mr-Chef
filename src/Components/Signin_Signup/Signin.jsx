@@ -108,6 +108,7 @@ function Signin(props) {
          })
          if(filterredData.length > 0) {
           dispatch(fetchUserSuccess(filterredData[0]))
+          console.log(filterredData[0 ], "success")
           toast({
             title: "Signin successfully",
             description: "You have successfully Signed-in",
