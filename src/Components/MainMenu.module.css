@@ -28,13 +28,18 @@
     }
 }
 
-.body .container {
+.head{
+    display : flex;
+    justify-content : center;
+}
+
+.container {
     width: 90%;
     margin: auto;
     margin-top: 40px;
 }
 
-.body img {
+.img {
     width: 100%;
     height: 220px;
     border-radius: 10px;

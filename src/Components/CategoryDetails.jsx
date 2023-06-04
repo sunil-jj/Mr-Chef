@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import SingleCategory from './SingleCategory';
-import "./CategoryDetails.css";
+import styles from "./CategoryDetails.module.css";
 import { useSelector, useDispatch } from "react-redux";
 
 import { getDataRequest, getDataSuccess, getDataFailure } from "../Redux/actionCreator";
@@ -14,30 +14,28 @@ const CategoryDetails = () => {
     const [search, setSearch] = useState("");
 
     const data = useSelector((store) => {
-        return store.data;
+        return store.reducer.data;
     })
-
-    console.log(category, "Category")
 
     useEffect(() => {
         dispatch(getDataRequest());
+        console.log(category);
         axios.get(`http://localhost:8000/${category}`)
             .then((res) => {
-                console.log(res.data, "Category details")
                 dispatch(getDataSuccess(res.data));
             })
             .catch((err) => {
                 dispatch(getDataFailure());
                 console.log(err);
             })
-    },[])
+    })
 
     return (
         <div>
-            <div>
-                <input className="searchBar" type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <input className={styles.searchBar} type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
             </div>
-            <div className="items">
+            <div className={styles.items}>
                 {
                     data.length > 0 && data.filter((item) => {
                         return search.toLowerCase() === ""
@@ -45,15 +43,15 @@ const CategoryDetails = () => {
                             : item.name.toLowerCase().includes(search)
                     }).map((ele, i) => {
                         return (
-                                <SingleCategory key={i} 
-                                id={ele.id} 
-                                image={ele.image} 
-                                name={ele.name} 
-                                category={ele.category} 
+                            <SingleCategory key={i}
+                                id={ele.id}
+                                image={ele.image}
+                                name={ele.name}
+                                category={ele.category}
                                 price={ele.price}
                                 desc={ele.desc}
-                                weight={ele.weight}/>
-                            )
+                                weight={ele.weight} />
+                        )
 
                     })
                 }
