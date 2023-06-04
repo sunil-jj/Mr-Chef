@@ -42,7 +42,7 @@ const Footer = () => {
 
         <div className='lower'
         style={{display : "flex", justifyContent : "center"}}>
-            <p>All Rights Reserved. Copyright Jubilant FoodWorks Ltd.</p>
+            <p>All Rights Reserved. Copyright Mr.Chef Ltd.</p>
         </div> 
 
     </div>
