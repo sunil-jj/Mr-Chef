@@ -305,33 +305,13 @@
   ],
   "cart": [
     {
-      "id": 4,
-      "image": "https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "name": "Crunchy Chicken Strips",
-      "category": "Street Food",
-      "price": 399,
-      "desc": "Fried Chicken stripes dipped in flour and bread crumbs · coated wit egg mix · fried or baked ",
-      "weight": "350gms",
-      "quantity": 1
-    },
-    {
-      "id": 7,
-      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-      "name": "Samosa",
-      "category": "Street Food",
-      "price": 41,
-      "desc": "peas · potatoes · masala · chilli · flatbread cone deep fried or baked",
-      "weight": "100gms",
-      "quantity": 1
-    },
-    {
-      "id": 8,
-      "image": "https://www.mapsofindia.com/ci-moi-images/my-india/Idli-Sambhar.jpg",
-      "name": "Idli Sambhar",
-      "category": "Street Food",
-      "price": 181,
-      "desc": "Soft idlis made of Toor dal and curd · vegetable lentil stew with chutney",
-      "weight": "250gms",
+      "id": 1,
+      "image": "https://images.pexels.com/photos/4394619/pexels-photo-4394619.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "name": "Cheese Pizza",
+      "category": "Pizza",
+      "price": 149,
+      "desc": "Basil · Cheese · Tomatoes",
+      "weight": "150gms",
       "quantity": 1
     }
   ],
@@ -356,6 +336,13 @@
       "email": "asd@gmail.com",
       "password": "asd",
       "id": 3
+    },
+    {
+      "name": "mmmm",
+      "mobile": "1111111111",
+      "email": "mmmm@gmail.com",
+      "password": "mmmm",
+      "id": 4
     }
   ]
 }

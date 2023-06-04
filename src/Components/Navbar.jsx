@@ -24,7 +24,7 @@ const Navbar = () => {
     <Link to="/menu">  
       <Text fontWeight={"bold"} cursor={"pointer"} fontSize="20px">Menu</Text>
       </Link>
-      <Link to="contact"> 
+      <Link to="/contact"> 
       <Text fontWeight={"bold"} cursor={"pointer"} fontSize="20px">Contact</Text>
       </Link>
       <Link to="/about"> 
@@ -37,7 +37,7 @@ const Navbar = () => {
     <Link to="/signup">
     <Button color={"black"} colorScheme='orange' variant='solid'>{userName===undefined ? "Login" : `Hi ${userName}`}</Button>
     </Link>
-    <Link to="cart">
+    <Link to="/cart">
       <BsCartPlusFill style={{fontSize:"30px", cursor:"pointer"}}/>
       </Link>
     </Box>

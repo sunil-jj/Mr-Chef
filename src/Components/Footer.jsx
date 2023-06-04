@@ -7,7 +7,7 @@ import { AiOutlineYoutube } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <div className='footer' style={{backgroundColor : "grey", color : "white" }}>
+    <div className='footer' style={{backgroundColor : "#EBC94A", color : "black", marginTop:"10px" }}>
 
         <div className='upper' 
         style={{display : "flex", justifyContent : "space-around", paddingBottom : "20px"}}>

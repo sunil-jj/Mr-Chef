@@ -50,31 +50,6 @@ function Contact() {
         
       </div>
 
-      <div style={{border:"2px solid black",width:"100%",height:"150px",backgroundColor:"black",display:"flex"}} className='footer'>
-       <div style={{color:"white",marginLeft:"10px"}}>
-         <h4> New</h4>
-         <h4> Shawarma</h4>
-
-         <h4> Italian</h4>
-         <h4> East</h4>
-
-         <h4> Pizza</h4>
-
-         <h4> Drinks</h4>
-
-
-       </div>
-
-       <div style={{marginLeft:"580px"}}>
-        
-        <img style={{width:"30%"}} src=" https://elements-cover-images-0.imgix.net/fda54103-93aa-4f82-83cd-e95044b58c85?auto=compress%2Cformat&fit=max&w=2740&s=9c89581eb39a356bc14fd2f4b77645a2"  />
-        
-       
-       </div>
-
-
-
-      </div>
     
 
       

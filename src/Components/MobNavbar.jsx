@@ -22,7 +22,7 @@ import {BsCartPlusFill} from "react-icons/bs";
 import {GrContactInfo} from "react-icons/gr"
 import {TbArrowRoundaboutRight} from "react-icons/tb"
 import {BsInstagram, BsFacebook} from "react-icons/bs"
-import {GiHamburgerMenu} from "react-icons/gi"
+import {GiHamburger} from "react-icons/gi"
 import logo from "./Signin_Signup/images/w.png"
 
 function MobNavbar(props) {
@@ -35,7 +35,7 @@ function MobNavbar(props) {
     <>
     <Box h={"60px"} bg={"yellow.400"} display={"flex"} justifyContent={"space-between"} alignItems={"center"} paddingX={"30px"}>
     <Image boxSize={"70px"} src={logo}/>
-       <GiHamburgerMenu style={{fontSize:"40px",}} ref={btnRef} onClick={onOpen}/>
+       <GiHamburger style={{fontSize:"40px",}} ref={btnRef} onClick={onOpen}/>
        </Box>
       <Drawer
         isOpen={isOpen}
