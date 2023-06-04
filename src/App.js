@@ -9,6 +9,7 @@ import Loading from "./Components/loading";
 import Successfullpage from "./Components/successfullpage";
 import MobNavbar from "./Components/MobNavbar";
 import CombinedNavbar from "./Components/CombinedNavbar";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       {/* <Navbar position={"sticky"}/> */}
       <CombinedNavbar/>
       <AllRoute/>
-
+      <Footer/>
       {/* <MobNavbar/> */}
 
     </div>
