@@ -4,7 +4,7 @@ import React from 'react'
 function About() {
   return (
 
-    <Box >
+    <Box pt={"20px"}>
       <h2 style={{fontFamily:"cursive",fontWeight:"bold",fontSize:"35px",marginLeft:"45%"}} > About Us</h2>
       <Center>
       <Image w="50%"  src=" https://media.istockphoto.com/id/1394055240/photo/happy-black-female-chef-preparing-food-in-frying-pan-at-restaurant-kitchen.jpg?b=1&s=612x612&w=0&k=20&c=orfnpNSuRtQ88QcXjT2_YORJ0DsrLL7uBoE9Pt3njKM="/>

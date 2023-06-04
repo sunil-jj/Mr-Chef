@@ -5,6 +5,8 @@ import { useParams } from 'react-router-dom';
 import SingleCategory from './SingleCategory';
 import styles from "./CategoryDetails.module.css";
 import { useSelector, useDispatch } from "react-redux";
+import { Icon, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
+import { BsSearchHeartFill } from "react-icons/bs";
 
 import { getDataRequest, getDataSuccess, getDataFailure } from "../Redux/actionCreator";
 
@@ -33,7 +35,7 @@ const CategoryDetails = () => {
     return (
         <div>
             <div style={{ display: "flex", justifyContent: "center" }}>
-                <input className={styles.searchBar} type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
+                <input className={styles.searchBar} type="text" placeholder="Search food" onChange={(e) => setSearch(e.target.value)} />
             </div>
             <div className={styles.items}>
                 {

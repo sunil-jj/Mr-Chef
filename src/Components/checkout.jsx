@@ -128,12 +128,12 @@ let handlecrbtn=()=>{
  }
  
   return (
-       <Box height="900px"  >
+       <Box bg="#011029" height="100%"  >
       <Box display={checkoutpage}>
        
       <Center>
       <Stack>
-      <Box w="500px"> <Text fontSize="25px" fontWeight="extrabold" fontFamily="cursive" align="right">Checkout</Text></Box>
+      <Box w="500px"> <Center> <Text pt="20px" color={"white"} fontSize="25px" fontWeight="extrabold" fontFamily="cursive" align="right">Checkout</Text> </Center></Box>
       <Box w="500px" height="600px" align="left" padding="15px" borderWidth='2px'backgroundColor="white" borderRadius='lg' overflow='hidden'>
        <Text fontSize="18px">DELIVERY TERMS</Text>
        <Checkbox size ="md" iconColor="black" borderColor="black" colorScheme="yellow">Delivery</Checkbox><br />

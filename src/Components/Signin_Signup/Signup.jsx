@@ -131,7 +131,7 @@ function Signup(props) {
         if(!user){
           axios.post("http://localhost:8000/users", userDataObj)
         .then((res) => {
-          dispatch(postUserSuccess(res.data));
+          // dispatch(postUserSuccess(res.data));
           toast({
             title: "Registration successfully",
             description: "Account created successfully",
@@ -197,7 +197,7 @@ function Signup(props) {
             >
               <Center>
                 <Box className={styles.welcome_div}>
-                  <Heading pt="10px" as="h1" className={styles.welcome_div}>
+                  <Heading pt="10px" as="h1" className={styles.welcome_div} fontFamily={"cursive"} pl={"65px"}>
                     Welcome
                   </Heading>
                 </Box>
@@ -336,6 +336,7 @@ function Signup(props) {
                           </Button>
                         }
                       </Center>
+                      <Center>
                       <p className={styles.textAnimation}>
                         <span
                           style={{
@@ -348,6 +349,7 @@ function Signup(props) {
                         </span>{" "}
                         on everything for registered users
                       </p>
+                      </Center>
                     </TabPanel>
                   </TabPanels>
                 </Tabs>

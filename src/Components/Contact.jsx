@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div>
+    <div style={{paddingTop:"20px"}}>
 
       <div className='topbox'>
         <div style={{width:"35%",marginLeft:"37%"}}>

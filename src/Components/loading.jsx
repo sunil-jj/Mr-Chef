@@ -10,7 +10,7 @@ useEffect(()=> {
 })
 
     return <>
-    <Center>
+    <Center h={"100vh"} bg="#011029">
     <Image width="70%" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/e33acd165456287.640c99de4ca3e.gif"/>
     </Center>
 

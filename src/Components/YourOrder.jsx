@@ -51,13 +51,15 @@ const YourOrder = () => {
         const handleRemoveItem = (id) => {
                 axios.delete(`http://localhost:8000/cart/${id}`)
                 // dispatch(addCartRequest())
-                axios.get("http://localhost:8000/cart")
+                .then(()=>{
+                        axios.get("http://localhost:8000/cart")
                 .then((res)=>{
                         setCartProduct(res.data)
                         // console.log(res.data.data)
                         // dispatch(addCartSuccess(res.data))
                 }).catch((err) => {
                         // dispatch(addCartFailure())
+                })
                 })
                 // const updatedOrders = cartProduct.filter((order) => order.id !== id);
                 // setCartProduct(updatedOrders);
@@ -76,7 +78,7 @@ const YourOrder = () => {
 
         return (
                 <Flex w="100vw" h="100vh" justify="center" align="center" bg="#011029">
-                        <Box w={isLargerThan ? '500px' : '100%'} p={4} borderWidth={1} borderRadius="lg" bg="white">
+                        <Box  w={isLargerThan ? '500px' : '100%'} p={4} borderWidth={1} borderRadius="lg" bg="white">
 
                                 <VStack spacing={4} align="stretch">
                                         <Text fontSize="2xl" fontWeight="bold">

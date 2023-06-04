@@ -20,7 +20,7 @@ const MainMenu = () => {
     return (
         <div className="menuBox">
             <div className={styles.head} >
-                <Heading size='lg' style={{fontFamily : 'cursive'}}>Our Menu</Heading>
+                <Heading pt={"20px"} mb={"-20px"} size='lg' style={{fontFamily : 'cursive'}}>Our Menu</Heading>
             </div>
  
             <div className={styles.body}>
