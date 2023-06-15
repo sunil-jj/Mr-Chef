@@ -125,11 +125,11 @@ function Signup(props) {
     e.preventDefault();
     let userDataObj = { name, mobile, email, password };
     if (isValidated()) {
-      axios.get("http://localhost:8000/users")
+      axios.get("https://mrchef-vhy8.onrender.com/users")
       .then((res)=>{
         const user = res.data.find((data) => data.mobile === mobile);
         if(!user){
-          axios.post("http://localhost:8000/users", userDataObj)
+          axios.post("https://mrchef-vhy8.onrender.com/users", userDataObj)
         .then((res) => {
           // dispatch(postUserSuccess(res.data));
           toast({
@@ -142,6 +142,10 @@ function Signup(props) {
           setloader(true);
     setTimeout(() => {
       setloader(false);
+      setName('')
+      setmobile('')
+      setemail('')
+      setPassword('')
     }, 2000);
           // navigate("/signin");
         })

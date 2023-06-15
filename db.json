@@ -288,7 +288,7 @@
       "name": "Poha Jalebi",
       "category": "Street Food",
       "price": 140,
-      "desc": "Poa with onion · peanuts · green chilli · coriander · mustard seeds · curry leaves · Chilli powder · potato · Jalebis made of flour and cornstarch",
+      "desc": "Poa with onion · peanuts · green chilli · coriander · mustard seeds · curry leaves · Chilli powder · potato · Jalebis made of flour",
       "weight": "250gms",
       "quantity": 1
     },
@@ -305,44 +305,23 @@
   ],
   "cart": [
     {
-      "id": 1,
-      "image": "https://images.pexels.com/photos/4394619/pexels-photo-4394619.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "name": "Cheese Pizza",
-      "category": "Pizza",
-      "price": 149,
-      "desc": "Basil · Cheese · Tomatoes",
-      "weight": "150gms",
+      "id": 3,
+      "image": "https://images.pexels.com/photos/115740/pexels-photo-115740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "name": "Cheese French Fries",
+      "category": "Street Food",
+      "price": 99,
+      "desc": "Cheese · potato · Tomato Sauce",
+      "weight": "250gms",
       "quantity": 1
     }
   ],
   "users": [
     {
-      "name": "saurabh",
-      "mobile": "1234567890",
-      "email": "saurabh@gmail.com",
-      "password": "rrrr",
+      "name": "sumit",
+      "mobile": "9867534256",
+      "email": "sumit@gmail.com",
+      "password": "saurabh",
       "id": 1
-    },
-    {
-      "name": "abc",
-      "mobile": "3333333333",
-      "email": "abc@gmail.com",
-      "password": "abc",
-      "id": 2
-    },
-    {
-      "name": "asd",
-      "mobile": "2222222222",
-      "email": "asd@gmail.com",
-      "password": "asd",
-      "id": 3
-    },
-    {
-      "name": "mmmm",
-      "mobile": "1111111111",
-      "email": "mmmm@gmail.com",
-      "password": "mmmm",
-      "id": 4
     }
   ]
 }

@@ -7,7 +7,6 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  useDisclosure,
   Button,
   Stack,
   InputGroup,
@@ -52,13 +51,13 @@ function ResetPassword({isOpen, onClose}) {
   const handleSubmitButton = (e) => {
     e.preventDefault();
     axios
-      .get("http://localhost:8000/users")
+      .get("https://mrchef-vhy8.onrender.com/users")
       .then((res) => {
         const user = res.data.find((data) => data.mobile === mobile);
         if (user) {
           const updatedUser = { ...user, password: password };
           axios
-            .put(`http://localhost:8000/users/${user.id}`, updatedUser)
+            .put(`https://mrchef-vhy8.onrender.com/users/${user.id}`, updatedUser)
             .then((res) => {
               toast({
                 title: "Reset successfully",

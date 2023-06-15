@@ -24,7 +24,7 @@ const SingleCategory = ({ id, image, name, category, price, desc, weight }) => {
         })
         console.log(cartItem);
         dispatch(addCartRequest());
-        axios.post('http://localhost:8000/cart', cartItem[0])
+        axios.post('https://mrchef-vhy8.onrender.com/cart', cartItem[0])
             .then((res) => {
                 console.log(res);
                 dispatch(addCartSuccess(res.data))
@@ -60,7 +60,7 @@ const SingleCategory = ({ id, image, name, category, price, desc, weight }) => {
                     textAlign: "center",
                     backgroundColor: "black",
                     color: "white",
-                    borderRadius: "10px"
+                    borderRadius: "10px",
                 }}>
                 <img src={image} alt={name} className={styles.img} />
                 <h3 style={{ margin: "auto", marginTop: "20px", fontSize: 20, fontFamily: 'cursive', color: 'grey' }}>{category}</h3>

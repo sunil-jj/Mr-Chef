@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios"
-import { useDispatch } from 'react-redux';
-import { addCartRequest, addCartFailure, addCartSuccess } from '../Redux/actionCreator';
 import { useNavigate } from 'react-router-dom';
 import {
         Box,
@@ -16,10 +14,8 @@ import {
         useMediaQuery,
 } from '@chakra-ui/react';
 import { CloseIcon } from '@chakra-ui/icons';
-import { useSelector } from 'react-redux';
 
 const YourOrder = () => {
-        const dispatch = useDispatch()
         const navigate = useNavigate()
         const [cartProduct, setCartProduct] = useState([])
         // Sample data for demonstration purposes
@@ -49,10 +45,10 @@ const YourOrder = () => {
         // })
         // console.log(cartProduct, "cart product")
         const handleRemoveItem = (id) => {
-                axios.delete(`http://localhost:8000/cart/${id}`)
+                axios.delete(`https://mrchef-vhy8.onrender.com/cart/${id}`)
                 // dispatch(addCartRequest())
                 .then(()=>{
-                        axios.get("http://localhost:8000/cart")
+                        axios.get("https://mrchef-vhy8.onrender.com/cart")
                 .then((res)=>{
                         setCartProduct(res.data)
                         // console.log(res.data.data)
@@ -67,7 +63,7 @@ const YourOrder = () => {
 
         useEffect(()=>{
                 // dispatch(addCartRequest())
-                axios.get("http://localhost:8000/cart")
+                axios.get("https://mrchef-vhy8.onrender.com/cart")
                 .then((res)=>{
                         setCartProduct(res.data)
                 }).catch((err) => {
@@ -82,7 +78,7 @@ const YourOrder = () => {
 
                                 <VStack spacing={4} align="stretch">
                                         <Text fontSize="2xl" fontWeight="bold">
-                                                Your Order
+                                                Your Cart
                                         </Text>
                                         {cartProduct.map((order) => (
                                                 <Box key={order.id}>
