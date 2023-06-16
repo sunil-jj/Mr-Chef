@@ -1,4 +1,4 @@
-<h1>Razer.com Clone</h1>
+<h1>Mr Chef</h1>
 
 Deployed Link -: https://razer-clone-six.vercel.app/
 
