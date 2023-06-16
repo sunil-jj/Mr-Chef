@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+<h1>Razer.com Clone</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed Link -: https://razer-clone-six.vercel.app/
 
-## Available Scripts
+Tech Stack used:-
+1. React
+2. Redux
+3. Middleware
+4. Chakra UI
+5. CSS
+6. json-server
+7. Routing
+8. Google Recaptcha
 
-In the project directory, you can run:
 
-### `npm start`
+Pages are -:
+1. Home
+2. Product
+3. Product Details
+4. Sign Up
+5. Sign in
+6. Payment
+7. Congratulations After Sucessfull order
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+These are screenshots of the Pages
 
-### `npm test`
+HomePage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1440" alt="Screenshot 2023-06-16 at 5 28 04 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/2b4cd477-e6b0-4949-90d2-b9dcc64b144c">
 
-### `npm run build`
+<img width="1440" alt="Screenshot 2023-06-16 at 5 28 10 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/20565fe7-fc78-43da-98bb-ae6968b655cc">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Menu Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="1464" alt="Screenshot 2023-06-16 at 5 28 19 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/7c819ff8-c072-4101-a855-5bab1e09a81e">
 
-### `npm run eject`
+Product Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img width="1440" alt="Screenshot 2023-06-16 at 5 28 33 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/aede48cd-01f9-4929-ad00-94828b764cce">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Sign in - Sign up
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="1440" alt="Screenshot 2023-06-16 at 5 28 56 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/afaf0f51-8a5f-44b4-88c4-78a0b751e2d9">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="1440" alt="Screenshot 2023-06-16 at 5 29 01 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/a35643bd-a407-4017-9c24-7e89efae674e">
 
-## Learn More
+Contact Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img width="1440" alt="Screenshot 2023-06-16 at 5 29 20 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/bb36818c-196d-4770-b117-a4a8f50cc18a">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+About Page
 
-### Code Splitting
+<img width="1440" alt="Screenshot 2023-06-16 at 5 29 26 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/3ed9f77b-a722-42c2-8c41-7b08e0da7792">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Cart Page
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img width="1440" alt="Screenshot 2023-06-16 at 5 29 33 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/c66b8e74-b0a1-445b-82c7-6492248cc6a0">
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Checkout Page
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img width="1440" alt="Screenshot 2023-06-16 at 5 29 48 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/ffd34b55-f37a-453b-a1eb-0b7a32cb875b">
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="1440" alt="Screenshot 2023-06-16 at 5 29 54 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/2bb91b62-9e83-4dfe-ae0a-a2e3a7528ca8">
 
-### `npm run build` fails to minify
+OTP Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1440" alt="Screenshot 2023-06-16 at 5 30 13 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/67d2a3e7-8cc0-45ed-bf8e-483176ede38b">
+
+
+Success Page
+
+<img width="1440" alt="Screenshot 2023-06-16 at 5 30 25 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/32e960bd-1388-48dc-b79d-64120d306d1c">
+
+
+<img width="1464" alt="Screenshot 2023-06-16 at 5 30 31 AM" src="https://github.com/Sunil-JJ/mrchefproject/assets/105351295/0738a8c4-08f4-41c8-a866-d42254d590aa">
+
+
+
+
+
+
+
+
+
+
+
+
+
