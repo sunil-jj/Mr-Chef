@@ -1,6 +1,6 @@
 <h1>Mr Chef</h1>
 
-Deployed Link -: https://mrchef-sand.vercel.app/
+Deployed Link -: https://mr-chef-two.vercel.app/
 
 Tech Stack used:-
 1. React
