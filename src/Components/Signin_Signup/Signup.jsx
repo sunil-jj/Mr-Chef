@@ -114,7 +114,7 @@ function Signup(props) {
         duration: 2000,
         isClosable: true,
       });
-      // toast.warning(errormessage);
+
     } else {
       //write something
     }
@@ -125,13 +125,12 @@ function Signup(props) {
     e.preventDefault();
     let userDataObj = { name, mobile, email, password };
     if (isValidated()) {
-      axios.get("https://mrchef-vhy8.onrender.com/users")
+      axios.get(`${process.env.REACT_APP_API}/users`)
       .then((res)=>{
         const user = res.data.find((data) => data.mobile === mobile);
         if(!user){
-          axios.post("https://mrchef-vhy8.onrender.com/users", userDataObj)
+          axios.post(`${process.env.REACT_APP_API}/users`, userDataObj)
         .then((res) => {
-          // dispatch(postUserSuccess(res.data));
           toast({
             title: "Registration successfully",
             description: "Account created successfully",
@@ -147,7 +146,6 @@ function Signup(props) {
       setemail('')
       setPassword('')
     }, 2000);
-          // navigate("/signin");
         })
         .catch((err) => {
           dispatch(postUserFaliure())
@@ -158,7 +156,6 @@ function Signup(props) {
             duration: 2000,
             isClosable: true,
           });
-          // toast.error("Failed :" + err.message);
         });
         }else{
           toast({
@@ -326,7 +323,7 @@ function Signup(props) {
                       <Center>
                         {/* google captcha */}
                         <ReCAPTCHA
-                          sitekey="6LdecqQlAAAAAF5O-JC8ProsSC_nHykNvfTpWp2B"
+                          sitekey={process.env.REACT_APP_SITE}
                           onChange={onChange}
                         />
                       </Center>

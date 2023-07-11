@@ -51,13 +51,13 @@ function ResetPassword({isOpen, onClose}) {
   const handleSubmitButton = (e) => {
     e.preventDefault();
     axios
-      .get("https://mrchef-vhy8.onrender.com/users")
+      .get(`${process.env.REACT_APP_API}/users`)
       .then((res) => {
         const user = res.data.find((data) => data.mobile === mobile);
         if (user) {
           const updatedUser = { ...user, password: password };
           axios
-            .put(`https://mrchef-vhy8.onrender.com/users/${user.id}`, updatedUser)
+            .put(`${process.env.REACT_APP_API}/users/${user.id}`, updatedUser)
             .then((res) => {
               toast({
                 title: "Reset successfully",

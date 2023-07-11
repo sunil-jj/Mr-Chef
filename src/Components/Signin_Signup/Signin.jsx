@@ -61,12 +61,6 @@ function Signin(props) {
     }));
   };
 
-  // const handleLoader = () => {
-  //   setloader(true);
-  //   setTimeout(() => {
-  //     setloader(false);
-  //   }, 1000);
-  // };
 
   const isValidated = () => {
     let isproceed = true;
@@ -101,7 +95,7 @@ function Signin(props) {
     e.preventDefault();
     let userDataObj = { mobile, password };
     if (isValidated()) {
-      axios.get("https://mrchef-vhy8.onrender.com/users")
+      axios.get(`${process.env.REACT_APP_API}/users`)
         .then((res) => {
          const filterredData = res.data.filter((data) => {
           return data.mobile ===mobile && data.password ===password
@@ -210,7 +204,7 @@ function Signin(props) {
       <Center pt={"20px"}>
         {/* google captcha */}
         <ReCAPTCHA
-          sitekey="6LdecqQlAAAAAF5O-JC8ProsSC_nHykNvfTpWp2B"
+          sitekey={process.env.REACT_APP_SITE}
           onChange={onChange}
         />
       </Center>

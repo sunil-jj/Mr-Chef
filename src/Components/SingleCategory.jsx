@@ -24,7 +24,7 @@ const SingleCategory = ({ id, image, name, category, price, desc, weight }) => {
         })
         console.log(cartItem);
         dispatch(addCartRequest());
-        axios.post('https://mrchef-vhy8.onrender.com/cart', cartItem[0])
+        axios.post(`${process.env.REACT_APP_API}/cart`, cartItem[0])
             .then((res) => {
                 console.log(res);
                 dispatch(addCartSuccess(res.data))

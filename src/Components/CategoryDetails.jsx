@@ -22,7 +22,7 @@ const CategoryDetails = () => {
     useEffect(() => {
         dispatch(getDataRequest());
         console.log(category);
-        axios.get(`https://mrchef-vhy8.onrender.com/${category}`)
+        axios.get(`${process.env.REACT_APP_API}/${category}`)
             .then((res) => {
                 dispatch(getDataSuccess(res.data));
             })

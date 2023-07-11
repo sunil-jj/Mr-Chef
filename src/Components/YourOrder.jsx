@@ -45,10 +45,10 @@ const YourOrder = () => {
         // })
         // console.log(cartProduct, "cart product")
         const handleRemoveItem = (id) => {
-                axios.delete(`https://mrchef-vhy8.onrender.com/cart/${id}`)
+                axios.delete(`${process.env.REACT_APP_API}/cart/${id}`)
                 // dispatch(addCartRequest())
                 .then(()=>{
-                        axios.get("https://mrchef-vhy8.onrender.com/cart")
+                        axios.get(`${process.env.REACT_APP_API}/cart`)
                 .then((res)=>{
                         setCartProduct(res.data)
                         // console.log(res.data.data)
@@ -63,7 +63,7 @@ const YourOrder = () => {
 
         useEffect(()=>{
                 // dispatch(addCartRequest())
-                axios.get("https://mrchef-vhy8.onrender.com/cart")
+                axios.get(`${process.env.REACT_APP_API}/cart`)
                 .then((res)=>{
                         setCartProduct(res.data)
                 }).catch((err) => {
